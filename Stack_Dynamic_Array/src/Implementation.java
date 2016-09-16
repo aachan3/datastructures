@@ -33,13 +33,27 @@ public class Implementation {
 	
 	public void pop()
 	{
+		if(top<=-1)
+		{
+			System.out.println("List empty");
+		}
+		else
+		{
 	System.out.println(Dynam_stack[top--]);	
+		}
 	}
 	public void print()
 	{
+		if(top == -1)
+		{
+			System.out.println("No element present");
+		}
+		else
+		{
 		for(int g = top; g>=0;g--)
 		{
 			System.out.println(Dynam_stack[g]);
+		}
 		}
 	}
 	

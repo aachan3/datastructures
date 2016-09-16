@@ -35,10 +35,16 @@ public class Implementation {
 	}
 	public void print()
 	{
+		if(top==-1)
+		{
+			System.out.println("No elements presents");
+		}
+		else
+		{
 		for(int i=top;i>=0;i--)
 		{
 			System.out.println(stack[i]);
 		}
-	}
+	}}
 	
 }
